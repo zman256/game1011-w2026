@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 int main()
 {
@@ -12,5 +13,11 @@ int main()
 	std::cout << "Defense before overflow: " << defense << std::endl;
 	defense++;
 	std::cout << "Defense after overflow: " << defense << std::endl;
+	const char* message = "Hello world!";	// String literal --> array of characters
+	std::string message2 = "Hello";
+	message2 += " world!";					// C++ strings (std::string) allow you to combine text
+	std::cout << message << std::endl;
+	std::cout << message2 << std::endl;
+
 	return 0;
 }
