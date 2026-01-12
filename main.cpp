@@ -23,5 +23,15 @@ int main()
 	std::cout << message << std::endl;
 	std::cout << message2 << std::endl;
 
+	bool can_fight = health >= 100;
+	if (can_fight)
+	{
+		std::cout << "Ready for battle!" << std::endl;
+	}
+	else
+	{
+		std::cout << "You must rest, warrior..." << std::endl;
+	}
+
 	return 0;
 }
